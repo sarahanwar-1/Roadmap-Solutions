@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  
+  body {
+    background: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+  }
+  
+  nav a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .intro {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .box {
+    
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  
+  ul {
+    list-style: none;
+    margin-top: 10px;
+  }
+  
+  a {
+    display: inline-block;
+    margin-top: 10px;
+    color: blue;
+    text-decoration: underline;
+  }
+  
+  .reviews {
+    margin-top: 40px;
+  }
+  
+  .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+  }
+  
+  .card {
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+  }
+  
+  /* Responsive & Desktop Grid Layout */
+  @media (min-width: 768px) {
+    .grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    .cards {
+      flex-direction: row;
+    }
+  }
+  
+  footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 0.9em;
+  }
+  
